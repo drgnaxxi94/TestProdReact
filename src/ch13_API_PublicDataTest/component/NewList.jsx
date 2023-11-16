@@ -7,11 +7,14 @@ import PublicItem2 from "../model/PublicItem2";
 
 const NewListCss = styled.div`
   box-sizing: border-box;
-  padding-bottom: 3rem;
-  width: 768px;
+  width: 1000px;
   margin: 0 auto;
-  margin-top: 2rem;
-  @media screen and (max-width: 768px) {
+  margin-top: 1rem;
+  margin-bottom: 200px;
+  padding: 50px;
+  background-color: #fff;
+
+  @media screen and (max-width: 1000px) {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;

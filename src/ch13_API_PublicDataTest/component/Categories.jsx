@@ -4,25 +4,31 @@ import styled from "styled-components";
 
 // 카테고리 목록, 보이는 건 한글, 값은 영어로 할당.
 const categories = [
-  { name: "all", text: "전체보기" },
-  { name: "business", text: "비즈니스" },
-  { name: "entertainment", text: "엔터테인먼트" },
-  { name: "health", text: "건강" },
-  { name: "science", text: "과학" },
-  { name: "sports", text: "스포츠" },
-  { name: "technology", text: "기술" },
-  { name: "busanFood", text: "부산테마먹거리" },
-  { name: "busanWalking", text: "부산도보여행" },
+  { name: "all", text: "전체" },
+  { name: "business", text: "제주시" },
+  { name: "entertainment", text: "애월" },
+  { name: "health", text: "한림" },
+  { name: "science", text: "대정" },
+  { name: "sports", text: "한경" },
+  { name: "technology", text: "중문" },
+  { name: "busanFood", text: "안덕" },
+  { name: "busanWalking", text: "서귀포" },
+  { name: "busanWalking", text: "성산" },
+  { name: "busanWalking", text: "남원" },
+  { name: "busanWalking", text: "조천" },
+  { name: "busanWalking", text: "구좌" },
 ];
 // css
 const CategoriesBlockCss = styled.div`
   display: flex;
-  padding: 1rem;
-  width: 768px;
+  justify-content: center;
+  width: 1000px;
   margin: 0 auto;
-  background-image: url("https://cdn.pixabay.com/animation/2022/07/30/22/01/22-01-29-66_512.gif");
+  background-repeat-y: no-repeat;
+  background-image: url("https://cdn.pixabay.com/animation/2022/08/06/07/15/07-15-09-226_512.gif");
   background-size: 10%;
-  @media screen and (max-width: 768px) {
+  padding-top: 100px;
+  @media screen and (max-width: 1000px) {
     width: 100%;
     overflow-x: auto;
   }
@@ -33,19 +39,22 @@ const CategoriesCss = styled(NavLink)`
   cursor: pointer;
   white-space: pre;
   text-decoration: none;
-  color: inherit;
-  padding-bottom: 0.5rem;
+  color: #fff;
+  padding: 0.5rem;
 
   &:hover {
-    color: red;
+    color: yellow;
   }
 
   &.active {
     font-weight: 600;
+    border-top: 2px solid violet;
     border-bottom: 2px solid violet;
-    color: aqua;
+    color: #222;
+    background-color: pink;
     &:hover {
-      color: green;
+      color: hotpink;
+      font-weight: bold;
     }
   }
 

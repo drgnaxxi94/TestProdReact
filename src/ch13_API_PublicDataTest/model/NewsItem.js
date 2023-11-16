@@ -26,7 +26,7 @@ const NewsItemCss = styled.div`
     h2 {
       margin: 0;
       a {
-        color: blue;
+        color: slategray;
       }
     }
 
